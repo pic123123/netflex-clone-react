@@ -1,16 +1,19 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export default function Header() {
-    return (
-      <HeaderWrap>
-        <h1>LOGO</h1>
-        <ul>
-          <li>menu1</li>
-          <li>menu2</li>
-          <li>menu3</li>
-        </ul>
-      </HeaderWrap>
-    );
+  return (
+    <HeaderWrap>
+      <h1>LOGO</h1>
+      <ul>
+        <li>
+          <Link to="/">Movie</Link>
+        </li>
+        <Link to="/tv">Tv</Link>
+        <li>menu3</li>
+      </ul>
+    </HeaderWrap>
+  );
 }
 
 const HeaderWrap = styled.div`
@@ -38,4 +41,4 @@ const HeaderWrap = styled.div`
       }
     }
   }
-`
+`;
